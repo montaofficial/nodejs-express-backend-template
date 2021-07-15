@@ -4,8 +4,6 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const {authMiddle, authSuperMiddle, checkToken, checkSuperToken} = require('./auth-middleware');
 const { websockets } = require('../libs/websockets');
-const Joi = require('joi');
-const multer = require('multer');
 
 // replace this with actual MONGODB MODELS
 const { Sample } = require('../models/sample-model');

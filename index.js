@@ -20,7 +20,7 @@ const optionsDB = {
 }
 
 mongoose.connect(process.env.DB_URL, optionsDB)
-  .then(() => console.log(process.env.DB_AUTH + ' DB connected!'))
+  .then(() => console.log(process.env.DB_USER + ' connected to MongoDB!'))
   .catch(err=> console.error(err));
 
 // Handling websockets
