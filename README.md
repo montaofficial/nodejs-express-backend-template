@@ -13,8 +13,13 @@
 Ci siamo quasi:
 1. crea il file .env dal template
 2. esegui:
-  - npm install
-  - node index.js
+```bash
+# install dependences
+npm install
+
+# execute
+node index.js
+```
 
 
 ## Dipendenze
