@@ -21,8 +21,12 @@ router.post('/auth', async (req, res)=> {
 });
 
 // sample get request
-router.get("/", ()=>{
+router.get("/", (req, res)=>{
     return res.send("Works!");
+});
+
+router.get("/orders", (req, res)=>{
+    return res.send(["scarpa1", "scarpa2"]);
 });
 
 // Sample to understand ws usage
