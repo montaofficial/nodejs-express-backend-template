@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const sampleSchema = new mongoose.Schema({
+const schema = new mongoose.Schema({
   id: String || Object,
   store: String,
   created_at: Date,
@@ -56,6 +56,4 @@ const sampleSchema = new mongoose.Schema({
     
 }, { collection : 'samples' });
 
-const Sample = mongoose.model('Sample', sampleSchema);
-
-module.exports.Sample = Sample;
+module.exports.Sample = mongoose.model('Sample', schema);

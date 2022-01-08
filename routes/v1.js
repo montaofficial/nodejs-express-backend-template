@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 const {authMiddle, authSuperMiddle, checkToken, checkSuperToken} = require('./auth-middleware');
-const { websockets } = require('../libs/websockets');
+const websockets = require('../libs/websockets');
 
 // replace this with actual MONGODB MODELS
 const { Sample } = require('../models/sample-model');
