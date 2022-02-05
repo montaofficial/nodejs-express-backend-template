@@ -21,11 +21,11 @@ router.post('/auth', async (req, res)=> {
 });
 
 // sample get request
-router.get("/", (req, res)=>{
+router.get("/", async (req, res)=>{
     return res.send("Works!");
 });
 
-router.get("/orders", (req, res)=>{
+router.get("/orders", async (req, res)=>{
     return res.send(["scarpa1", "scarpa2"]);
 });
 

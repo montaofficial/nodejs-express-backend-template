@@ -18,7 +18,7 @@ Ci siamo quasi:
 npm install
 
 # execute
-node index.js
+node index
 ```
 
 
